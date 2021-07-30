@@ -23,3 +23,5 @@
   [] Não é permitido um usuário cadastrar um elogio para si.
   [] Não é permitido cadastar elogios para usuários inválidos.
   [] O usuário precisa estar autenticado na aplicação.
+
+  Biblioteca de criptografica de dados: yarn add bcryptjs | yarn add @types/bcryptsjs -D

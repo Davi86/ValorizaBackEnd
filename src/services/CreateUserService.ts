@@ -1,14 +1,16 @@
-import { getCustomRepository } from "typeorm"
-import { UserRepositories } from "../repositories/UsersRepositories"
+import { getCustomRepository } from "typeorm";
+import { UserRepositories } from "../repositories/UsersRepositories";
+import { hash } from "bcryptjs";
 
 interface IUserRequest {
   name: string;
   email: string;
-  admin?: boolean
+  admin?: boolean;
+  password: string;
 }
 //server -> routes -> Controller -> Service
 class CreateUserService {
-  async excute({name, email, admin} : IUserRequest) {
+  async excute({name, email, admin, password} : IUserRequest) {
     const usersRepository = getCustomRepository(UserRepositories);
     if(!email){
       //throw new  - lançando uma excessão 
@@ -26,7 +28,8 @@ class CreateUserService {
     const user = usersRepository.create({
       name,
       email,
-      admin
+      admin,
+      password
     });
 
     await usersRepository.save(user);
