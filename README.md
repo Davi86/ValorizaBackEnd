@@ -1,4 +1,4 @@
-# NWL Valoriza
+# NLW Valoriza
 
 ## Códigos
 
@@ -25,3 +25,6 @@
   [] O usuário precisa estar autenticado na aplicação.
 
   Biblioteca de criptografica de dados: yarn add bcryptjs | yarn add @types/bcryptsjs -D
+
+  Criando tabela no typeorm: yarn typeorm migration:create -n CreateCompliments
+  Rodando a migration após criação das tabelas: yarn typeorm migration:run
