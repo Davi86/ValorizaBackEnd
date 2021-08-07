@@ -10,7 +10,7 @@ interface IUserRequest {
 }
 //server -> routes -> Controller -> Service
 class CreateUserService {
-  async excute({name, email, admin = false, password} : IUserRequest) {
+  async execute({name, email, admin = false, password} : IUserRequest) {
     const usersRepository = getCustomRepository(UsersRepositories);
     if(!email){
       //throw new  - lançando uma excessão 

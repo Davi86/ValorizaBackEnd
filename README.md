@@ -20,11 +20,13 @@
   [x] Não é permitido o cadastro por usuário que não sejam administradores.
 
 - Cadastro de elogios
-  [] Não é permitido um usuário cadastrar um elogio para si.
-  [] Não é permitido cadastar elogios para usuários inválidos.
+  [x] Não é permitido um usuário cadastrar um elogio para si.
+  [x] Não é permitido cadastar elogios para usuários inválidos.
   [] O usuário precisa estar autenticado na aplicação.
 
   Biblioteca de criptografica de dados: yarn add bcryptjs | yarn add @types/bcryptsjs -D
+
+  JWT - Json Web Tokens
 
   Criando tabela no typeorm: yarn typeorm migration:create -n CreateCompliments
   Rodando a migration após criação das tabelas: yarn typeorm migration:run
