@@ -1,5 +1,3 @@
-# NLW Valoriza
-
 ## Códigos
 
 - yarn add express-async-errors
@@ -29,8 +27,3 @@
 
   Criando tabela no typeorm: yarn typeorm migration:create -n CreateCompliments
   Rodando a migration após criação das tabelas: yarn typeorm migration:run
-
-  Incrementar:
-  [ ] Envio de email para usuário
-  [ ] Colocar em produção
-  [ ] Fazer um frontend. (Será necessário adicionar o cors)
