@@ -1,11 +1,11 @@
 Arguments: 
-  C:\Program Files (x86)\nodejs\node.exe C:\Users\Davi\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @types/bcryptsjs -D
+  C:\Program Files (x86)\nodejs\node.exe C:\Users\Davi\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add class-transoformer
 
 PATH: 
-  C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Sybase\Shared\PowerBuilder\;C:\Smart\Pb6dk;C:\Smart\Pb12dk;C:\Program Files (x86)\Sybase\Shared\PowerBuilder;C:\Program Files (x86)\Appeon\Shared\PowerBuilder;C:\Sybase\shared;C:\Sybase\im6\tutorial;C:\Program Files (x86)\nodejs\;C:\Program Files\Java\jre1.8.0_291\bin;C:\Program Files\Java\jre1.8.0_291;C:\Program Files\Git\cmd;~\.yarn\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Davi\AppData\Local\Microsoft\WindowsApps;;C:\Users\Davi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Davi\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2\bin;
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python39\Scripts\;C:\Python39\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Sybase\Shared\PowerBuilder\;C:\Program Files (x86)\Appeon\Shared\PowerBuilder;C:\Smart\Pb6dk;C:\Smart\Pb12dk;C:\Program Files (x86)\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\nodejs\node_modules\npm\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jre1.8.0_291\;C:\Program Files\Java\jre1.8.0_291\\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Davi\AppData\Local\Microsoft\WindowsApps;;C:\Users\Davi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Davi\AppData\Roaming\npm
 
 Yarn version: 
-  1.22.10
+  1.22.11
 
 Node version: 
   14.17.0
@@ -14,13 +14,13 @@ Platform:
   win32 ia32
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2fbcryptsjs: Not found
-      at Request.params.callback [as _callback] (C:\Users\Davi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66988:18)
-      at Request.self.callback (C:\Users\Davi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140662:22)
+  Error: https://registry.yarnpkg.com/class-transoformer: Not found
+      at Request.params.callback [as _callback] (C:\Users\Davi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66992:18)
+      at Request.self.callback (C:\Users\Davi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140763:22)
       at Request.emit (events.js:376:20)
-      at Request.<anonymous> (C:\Users\Davi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141634:10)
+      at Request.<anonymous> (C:\Users\Davi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141735:10)
       at Request.emit (events.js:376:20)
-      at IncomingMessage.<anonymous> (C:\Users\Davi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141556:12)
+      at IncomingMessage.<anonymous> (C:\Users\Davi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141657:12)
       at Object.onceWrapper (events.js:482:28)
       at IncomingMessage.emit (events.js:388:22)
       at endReadableNT (internal/streams/readable.js:1336:12)
@@ -47,12 +47,16 @@ npm manifest:
       "sqlite3": "^5.0.2",
       "typeorm": "^0.2.34",
       "typescript": "^4.3.5",
-      "uuid": "^8.3.2"
+      "uuid": "^8.3.2",
+      "yarn": "^1.22.11"
     },
     "devDependencies": {
+      "@types/bcryptjs": "^2.4.2",
       "@types/jsonwebtoken": "^8.5.4",
       "ts-node-dev": "^1.1.8"
-    }
+    },
+    "repository": "https://github.com/Davi86/node.js.git",
+    "author": "Davi86"
   }
 
 yarn manifest: 
@@ -67,6 +71,11 @@ Lockfile:
     version "1.2.3"
     resolved "https://registry.yarnpkg.com/@sqltools/formatter/-/formatter-1.2.3.tgz#1185726610acc37317ddab11c3c7f9066966bd20"
     integrity sha512-O3uyB/JbkAEMZaP3YqyHH7TMnex7tWyCbCI4EfJdOCoN6HIhqdJBWTM6aCCiWQ/5f5wxjgU735QAIpJbjDvmzg==
+  
+  "@types/bcryptjs@^2.4.2":
+    version "2.4.2"
+    resolved "https://registry.yarnpkg.com/@types/bcryptjs/-/bcryptjs-2.4.2.tgz#e3530eac9dd136bfdfb0e43df2c4c5ce1f77dfae"
+    integrity sha512-LiMQ6EOPob/4yUL66SZzu6Yh77cbzJFYll+ZfaPiPPFswtIlA/Fs1MzdKYA7JApHU49zQTbJGX3PDmCpIdDBRQ==
   
   "@types/body-parser@*":
     version "1.19.1"
@@ -2032,6 +2041,11 @@ Lockfile:
       string-width "^4.2.0"
       y18n "^5.0.5"
       yargs-parser "^20.2.2"
+  
+  yarn@^1.22.11:
+    version "1.22.11"
+    resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.22.11.tgz#d0104043e7349046e0e2aec977c24be106925ed6"
+    integrity sha512-AWje4bzqO9RUn3sdnM5N8n4ZJ0BqCc/kqFJvpOI5/EVkINXui0yuvU7NDCEF//+WaxHuNay2uOHxA4+tq1P3cg==
   
   yn@3.1.1:
     version "3.1.1"
